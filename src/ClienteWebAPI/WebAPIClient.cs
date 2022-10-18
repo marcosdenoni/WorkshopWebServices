@@ -17,7 +17,7 @@ namespace ClienteWebAPI
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public Livro[]? Get(int? id) => _client.GetJsonAsync<Livro[]>($"Livro?id={id}").Result;
+        public Livro[]? Listar(int? id) => _client.GetJsonAsync<Livro[]>($"Livro?id={id}").Result;
 
         /// <summary>
         /// Remove um livro por id
